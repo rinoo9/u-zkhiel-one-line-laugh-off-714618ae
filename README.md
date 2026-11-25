@@ -6,9 +6,9 @@
 
 One-line joke entry for the make.fun bounty "One-Line Laugh-Off".
 
-Entry line (97 characters):
+Entry line (133 characters):
 
-> I asked my smart speaker to play something relaxing, so it read out my bank balance in a whisper.
+> My fitness tracker congratulated me on climbing 12 flights of stairs, so I told it the elevator was broken and we both agreed to lie.
 
 ## Run
 
