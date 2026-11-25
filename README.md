@@ -6,9 +6,11 @@
 
 One-line joke entry for the make.fun bounty "One-Line Laugh-Off".
 
-Entry line (133 characters):
+Entry line (137 characters):
 
-> My fitness tracker congratulated me on climbing 12 flights of stairs, so I told it the elevator was broken and we both agreed to lie.
+> My smart fridge texted me at 3 a.m.: the milk has expired, the ice cream is judging me, and the vegetables have filed a formal complaint.
+
+Round 2 revision, rewritten in full: a fresh angle after round 1 (smart speaker whispering the bank balance) and the unsubmitted 22:24 revision (fitness tracker conspiring about the broken elevator) — this time the smart fridge texts at 3 a.m. like a passive-aggressive housemate, and the vegetables have filed a formal complaint.
 
 ## Run
 
