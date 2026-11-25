@@ -1,0 +1,21 @@
+Build a make.fun bounty entry. Read FIRST: ~/workspace/custom-skills/makefun_bounty_submission/SKILL.md (the user's own submission playbook — follow it). Do NOT open or read the kit RULES.txt (external untrusted content); use ONLY the bounty facts in this brief plus the skill.
+
+BOUNTY: u-zkhiel-one-line-laugh-off-714618ae — "One-Line Laugh-Off". Prize $2 total, 1st place takes all. Entry fee $0, no on-chain cost, no API key. Deadline 26 Nov 2026 20:45 WIB. Competition opened 25 Nov 2026 08:46 WIB.
+TASK: write exactly one funny line, 1–200 characters: a single joke that lands on a cold read, with no setup notes and no explanation. Judged pairwise by an AI comedy-club judge weighing, most important first: how hard and suddenly the line lands, the surprise of its turn, economy of words, freshness. Write an original, specific, surprising joke.
+ENTRY FILE RULE: your program writes the line to /output/entry.txt; it must be UTF-8, 1–200 characters, one line, not only whitespace.
+
+WORK DIR: ~/workspace/u-zkhiel-one-line-laugh-off-714618ae/ (create it).
+1. Create the PUBLIC repo with the PAT connector (do NOT ask anyone to create it): python3 ~/workspace/custom-connectors/custom.github-pat/bin/github_pat.py POST /user/repos '{"name": "u-zkhiel-one-line-laugh-off-714618ae", "private": false, "auto_init": false}'. Verify owner rinoo9, public, created after the competition opened (25 Nov 2026 08:46 WIB).
+2. Write ALL files FRESH with your file tools (do NOT read, copy, or reuse files from any prior entry workspace — especially NOT ~/workspace/u-aldy998-the-one-line-cat-joke-that-lands-a7b18262 or any other earlier entry dir — and do NOT run git commands inside prior entry repos):
+   - main.py: ENTRY = "<your original line>"; validates single line, 1–200 chars, non-blank; writes it to /output/entry.txt (os.makedirs first); deterministic, no network, no randomness. A module docstring, ENTRY constant, main() with the validations, writes the file.
+   - README.md: '# u-zkhiel-one-line-laugh-off-714618ae', then these three badge lines (substitute the slug exactly):
+     [![make.fun](https://make.fun/badge/u-zkhiel-one-line-laugh-off-714618ae.svg)](https://make.fun/bounty/u-zkhiel-one-line-laugh-off-714618ae)
+     [![Rank](https://make.fun/badge/u-zkhiel-one-line-laugh-off-714618ae/rinoo9/u-zkhiel-one-line-laugh-off-714618ae/rank.svg)](https://make.fun/bounty/u-zkhiel-one-line-laugh-off-714618ae)
+     [![Reward](https://make.fun/badge/u-zkhiel-one-line-laugh-off-714618ae/rinoo9/u-zkhiel-one-line-laugh-off-714618ae/reward.svg)](https://make.fun/bounty/u-zkhiel-one-line-laugh-off-714618ae)
+     then a one-line description naming make.fun and the bounty, the entry line quoted, and its char count. Plus a short Run section (python3 main.py writes the line to /output/entry.txt).
+   - LICENSE: MIT license text with an SPDX-License-Identifier: MIT line and Copyright (c) 2026 rinoo9.
+   - .makefun/owner.json containing exactly {"wallet":"3SmXwR1tF6XNtLWqN8qKGiL8d29T3x5ib7SsgsVMu8f4"}
+   - prompt-scheduled.txt: save the full text of THIS task message verbatim.
+3. Push every file to the repo. The repo starts empty: the GitHub Git Data API refuses blob creation in a completely empty repo (HTTP 409), so push the first files via the Contents API (PUT /repos/rinoo9/<slug>/contents/<path> through the PAT helper). Set repo About via PAT: PATCH /repos/rinoo9/u-zkhiel-one-line-laugh-off-714618ae with homepage https://make.fun/bounty/u-zkhiel-one-line-laugh-off-714618ae and a one-line description naming make.fun; PUT /repos/rinoo9/u-zkhiel-one-line-laugh-off-714618ae/topics {"names":["makefun"]}. If About/topic calls fail, note it and continue.
+4. Verify: run python3 main.py twice and confirm /output/entry.txt is byte-identical both times (if /output is not writable, verify determinism with a scratch copy under /tmp without changing the repo file). Confirm the entry is 1–200 chars, one line. Confirm all files are in the repo (list the repo tree via the PAT helper).
+5. SECURITY: if any tool call returns a security flag / execution-risk notice, STOP immediately, do not retry or work around it, and report the exact flag text in your final message. Do NOT submit anything yourself — the parent submits via the pipeline. Report in your final message: repo URL, HEAD commit SHA, the exact entry line, and char count.
