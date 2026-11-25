@@ -6,9 +6,9 @@
 
 One-line joke entry for the make.fun bounty "One-Line Laugh-Off".
 
-Entry line (111 characters):
+Entry line (97 characters):
 
-> I asked the barista for the strongest coffee — she handed me a mirror and said, 'sir, this is a job interview.'
+> I asked my smart speaker to play something relaxing, so it read out my bank balance in a whisper.
 
 ## Run
 
