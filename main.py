@@ -6,7 +6,7 @@ Deterministic, no network, no randomness.
 
 import os
 
-ENTRY = "I asked the barista for the strongest coffee \u2014 she handed me a mirror and said, 'sir, this is a job interview.'"
+ENTRY = "I asked my smart speaker to play something relaxing, so it read out my bank balance in a whisper."
 
 
 def main() -> None:
